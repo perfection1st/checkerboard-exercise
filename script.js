@@ -1,5 +1,3 @@
-var randomColor = Math.floor(Math.random()*16777215).toString(16);
-
 // Create alternating black/red tiles - Feature 1
 for(let i = 0; i < 81; i++) {
   var tile = document.createElement('div');
@@ -13,7 +11,7 @@ for(let i = 0; i < 81; i++) {
 
   } else {
     tile.classList.add('odd');
-    tile.style.backgroundColor = `#${randomColor}`;
+    tile.style.backgroundColor = "red";
   }
   document.body.appendChild(tile);
 
