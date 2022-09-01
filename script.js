@@ -1,4 +1,4 @@
-// Feature 2 created random color on every other square
+// Bonus Feature : Play music when document body is clicked
 let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
 
@@ -17,4 +17,11 @@ for(i = 0; i < 81; i++) {
   setInterval(() => {
     tile.style.backgroundColor = "#" + (Math.floor(Math.random()*16777215).toString(16)); 
   }, 2000);
+}
+
+// Audio player
+document.body.onclick = function() {
+  music = new Audio('http://elijahponders.com/music/wiskim-empty-rivers.mp3');
+  music.loop = true;
+  music.play();
 }
